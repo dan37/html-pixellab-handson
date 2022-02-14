@@ -40,16 +40,144 @@
   <h2>Useful links</h2>
 
   <ul>
-    <li><a
+    <li>
+      <a
         href="https://www.google.com/maps"
         title="google"
-      >https://www.google.com/maps</a></li>
-    <li><a
+      >https://www.google.com/maps</a>
+    </li>
+    <li>
+      <a
         href="https://www.coduripostale.com"
         title="coduri postale"
-      >https://www.coduripostale.com</a></li>
-  </ul>
+      >https://www.coduripostale.com</a>
+    </li>
+  </ul><br><br>
 
+
+  <form>
+    <h2>Adress Form</h2>
+    <fieldset>
+      <legend>Anddress Information</legend>
+      <label>Title:</label>
+      <label for="male">Mr</label>
+      <input
+        type="radio"
+        name="gender"
+        id="male"
+        value="male"
+        checked
+      >
+      <label for="female">Ms</label>
+      <input
+        type="radio"
+        name="gender"
+        id="female"
+        value="female"
+      >
+      <label for="na">Unspecified</label>
+      <input
+        type="radio"
+        name="gender"
+        id="na"
+        value="na"
+      ><br><br>
+
+      <label for="name">*Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        required
+      ><br><br>
+
+      <label for="surname">*Surname:</label>
+      <input
+        type="text"
+        name="surname"
+        id="surname"
+        placeholder="Surname"
+        required
+      ><br><br>
+
+      <label for="address-phone">*Phone</label>
+      <input
+        type="tel"
+        name="address-phone"
+        id="address-phone"
+        placeholder="Phone"
+        required
+      ><br><br>
+
+      <label for="address1">*Address Line 1</label>
+      <input
+        type="text"
+        name="address1"
+        id="address1"
+        placeholder="Address Line 1"
+        required
+      ><br><br>
+
+      <label for="address2">Address Line 2</label>
+      <input
+        type="text"
+        name="address2"
+        id="address2"
+        placeholder="Address Line 2"
+      ><br><br>
+
+      <label for="city">*City:</label>
+      <input
+        type="text"
+        name="city"
+        id="city"
+        placeholder="City"
+        required
+      ><br><br>
+
+      <label for="state">*State:</label>
+      <select
+        name="state"
+        id="state"
+        required
+      >
+        <option value="">--State--</option>
+      </select> <br><br>
+
+      <label for="postcode">*Postcode</label>
+      <input
+        type="text"
+        name="postcode"
+        id="postcode"
+        placeholder="Postcode"
+        required
+      > <br><br>
+
+      <input
+        type="checkbox"
+        name="gdpr-consent"
+        id="gdpr-consent"
+      >
+      <label for="gdpr-consent">GDPR generic consent?</label><br><br>
+
+      <button
+        type="submit"
+        name="submit"
+        id="submit"
+      >Create Account
+      </button>
+
+      <button
+        type="reset"
+        name="reset"
+        id="reset"
+      >Reset
+      </button>
+
+    </fieldset> <br><br><br>
+
+  </form>
 
   <div class="pixeltab-host">
     id="html01-04-06"

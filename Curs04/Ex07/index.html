@@ -39,7 +39,7 @@
   </p>
 
   <h1>Place Order</h1>
-  <p>This is the guest checkout, thank you for your order!</p>
+  <p>This is the <b>guest checkout</b>, thank you for your order!</p>
 
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -49,26 +49,38 @@
   </p><br>
 
   <h2>Products</h2>
-  <p><img
+  <p>
+    <img
       src="images/mouse.jpg"
       alt="mouse"
     >
-  </p>
-  <p>
-    <a href="https://www.google.com">Sterge</a>
-    <a href="https://www.google.com">Editeaza</a>
-  </p><br>
+    <a
+      href="https://www.google.com"
+      title="Sterge"
+    >Sterge</a>
+
+    <a
+      href="https://www.google.com"
+      title="Editeaza"
+    >Editeaza</a>
+  </p> <br>
 
   <hr><br>
 
-  <p><img
+  <p>
+    <img
       src="images/extension_chord.jpg"
       alt="extension_cord"
-    ></p>
-  <p>
-    <a href="https://www.google.com">Sterge</a>
-    <a href="https://www.google.com">Editeaza</a>
-  </p><br>
+    >
+    <a
+      href="https://www.google.com"
+      title="Sterge"
+    >Sterge</a>
+    <a
+      href="https://www.google.com"
+      title="Editeaza"
+    >Editeaza</a>
+  </p> <br>
 
   <hr><br>
 
@@ -76,13 +88,309 @@
       src="images/phone.jpg"
       alt="phone"
     >
+    <a
+      href="https://www.google.com"
+      title="Sterge"
+    >Sterge</a>
+    <a
+      href="https://www.google.com"
+      title="Editeaza"
+    >Editeaza</a>
   </p>
-  <p>
-    <a href="https://www.google.com">Sterge</a>
-    <a href="https://www.google.com">Editeaza</a>
-  </p><br>
 
-  
+  <hr><br><br><br>
+
+  <h2>Order Now</h2><br>
+
+  <p>On our website <i>no account is needed</i>.</p> <br>
+
+  <ol>
+
+    <li>
+      <p>First we need some info about yourself. <b>Don’t forget to provide a phone</b>.</p>
+    </li>
+    <li>
+      <p>Then we need your <i>real</i> shipping address.</p>
+    </li>
+    <li>
+      <p>Finally, your credit card information.</p>
+    </li>
+
+  </ol> <br><br>
+
+
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend><br>
+
+      <label>Title:</label>
+      <label for="male">Mr</label>
+      <input
+        type="radio"
+        name="gender"
+        id="male"
+        value="male"
+        checked
+      ><br>
+
+      <label for="female">Ms</label>
+      <input
+        type="radio"
+        name="gender"
+        id="female"
+        value="female"
+      > <br>
+
+      <label for="na">Unspecified</label>
+      <input
+        type="radio"
+        name="gender"
+        id="na"
+        value="na"
+      > <br> <br>
+
+
+      <label for="address-name">*Name:</label>
+      <input
+        type="text"
+        name="address-name"
+        id="address-name"
+        placeholder="Name"
+        required
+      > <br><br>
+
+
+      <label for="address-surname">*Surname</label>
+      <input
+        type="text"
+        name="address-surname"
+        id="address-surname"
+        placeholder="Surname"
+        required
+      > <br><br>
+
+      <label for="email">*Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        required
+      > <br><br>
+
+      <label for="phone">*Phone</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Phone"
+        required
+      > <br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Address</legend>
+      <label for="name">*Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        required
+      ><br><br>
+
+      <label for="surname">*Surname:</label>
+      <input
+        type="text"
+        name="surname"
+        id="surname"
+        placeholder="Surname"
+        required
+      ><br><br>
+
+      <label for="address-phone">*Phone</label>
+      <input
+        type="tel"
+        name="address-phone"
+        id="address-phone"
+        placeholder="Phone"
+        required
+      ><br><br>
+
+      <label for="address1">*Address Line 1</label>
+      <input
+        type="text"
+        name="address1"
+        id="address1"
+        placeholder="Address Line 1"
+        required
+      ><br><br>
+
+      <label for="address2">Address Line 2</label>
+      <input
+        type="text"
+        name="address2"
+        id="address2"
+        placeholder="Address Line 2"
+      ><br><br>
+
+      <label for="city">*City:</label>
+      <input
+        type="text"
+        name="city"
+        id="city"
+        placeholder="City"
+        required
+      ><br><br>
+
+      <label for="state">*State:</label>
+      <select
+        name="state"
+        id="state"
+        required
+      >
+        <option value="">--State--</option>
+        <option value="New York">New York</option>
+        <option value="California">California</option>
+      </select> <br><br>
+
+      <label for="postcode">*Postcode</label>
+      <input
+        type="text"
+        name="postcode"
+        id="postcode"
+        placeholder="Postcode"
+        required
+      > <br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Card Information</legend>
+      <label for="card-number">*Card number</label>
+      <input
+        type="text"
+        name="card-number"
+        id="card-number"
+        placeholder="Card Number"
+        required
+      ><br><br>
+
+      <label for="card-name">*Name on card</label>
+      <input
+        type="text"
+        name="card-name"
+        id="card-name"
+        placeholder="Name on card"
+        required
+      ><br><br>
+
+      <label for="card-expiry-month">*Expiry Month</label>
+      <select
+        name="card-expiry-month"
+        id="card-expiry-month"
+        required
+      >
+        <option value="January">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+      </select>
+
+      <label for="card-expiry-year">*Expiry Year</label>
+      <select
+        name="card-expiry-year"
+        id="card-expiry-year"
+        required
+      >
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+      </select><br><br>
+
+      <label for="card-cvv">*CVV</label>
+      <input
+        type="text"
+        name="card-cvv"
+        id="card-cvv"
+        placeholder="CVV"
+        required
+      ><br>
+
+      <p><i>We do not store credit card information!</i></p>
+
+    </fieldset>
+    <fieldset>
+      <legend>Form Control</legend>
+      <input
+        type="checkbox"
+        name="terms"
+        id="terms"
+        required
+      >
+      <label for="terms">*You are required to agree to the <a
+          href="terms and conditions"
+          title="terms and conditions"
+        >terms and conditions</a>
+      </label> <br>
+
+      <input
+        type="checkbox"
+        name="subscribe"
+        id="subscribe"
+      >
+      <label for="subscribe">Can we send you emails</label> <br>
+
+      <input
+        type="checkbox"
+        name="gdpr-consent"
+        id="gdpr-consent"
+      >
+      <label for="gdpr-consent">GDPR generic consent?</label> <br>
+    </fieldset><br>
+
+    <button
+      type="submit"
+      name="submit"
+      id="submit"
+    >PLACE ORDER
+    </button>
+
+    <button
+      type="reset"
+      name="reset"
+      id="reset"
+    >Reset
+    </button>
+
+  </form><br>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <p>
+    <a
+      href=""
+      title="Home"
+    >Home</a> *
+    <a
+      href=""
+      title="Place Order"
+    >
+      <b>Place Order</b>
+    </a> *
+    <a
+      href=""
+      title="Customer Service"
+    >Customer Service</a> *
+
+    <a
+      href=""
+      title="Contact"
+    >Contact</a>
+  </p><br><br>
+
 
   <div
     class="pixeltab-host"
