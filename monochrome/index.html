@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <header class="header-content">
+  <header class="header">
     <div class="banner-header">
 
       <div class="banner-header-content">
@@ -82,9 +82,14 @@
 
           <section class="header-controls">
 
-            <section class="header-search-controls">
+            <form class="header-search-controls">
+              <input
+                type="text"
+                name="search"
+                id="search"
+              >
               <button title="Search"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
-            </section>
+            </form>
             <!-- /.header-search-controls -->
 
             <section class="header-user-controls">
@@ -129,29 +134,67 @@
       </div>
       <!-- /.banner-header-content -->
     </div>
-    <setion class="header-bottom">
-      <ul>
-        <li><a href="">NEW ARRIVALS</a></li>
-        <li><a href="">BRANDS</a></li>
-        <li><a href="">MEN'S</a></li>
-        <li><a href="">WOMEN'S</a></li>
-        <li><a href="">ACCESSORIES</a></li>
-        <li><a href="">LOOKBOOK</a></li>
-      </ul>
-    </setion>
+    <section class="header-bottom">
+      <nav class="nav-bottom">
+        <ul>
+          <li>
+            <a
+              href=""
+              title="new arrivals"
+            >NEW ARRIVALS</a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="brands"
+            >BRANDS</a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="men's"
+            >MEN'S</a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="women's"
+            >WOMEN'S</a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="accessories"
+            >ACCESSORIES</a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="lookbook"
+            >LOOKBOOK</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
     <!-- /.header-bottom -->
 
   </header>
-  <!-- /.header-content-->
+  <!-- /.header-->
 
   <main class="content">
     <section class="content-main">
-      <section class="home-catalog-preview">
+
+      <section class="catalog-preview-ctas">
         <h1>New Stuff</h1>
 
         <section class="product-tiles">
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -161,15 +204,16 @@
                     src="images/products/product01.png"
                     alt="product 01"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <!--product-tile-image  -->
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+            <!--/.header  -->
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -181,7 +225,7 @@
           <!-- /.article -->
 
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -191,14 +235,17 @@
                     src="images/products/product02.png"
                     alt="product 02"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
-              </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+              </picture>
+
+            </header>
+            <!-- /.header -->
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -210,7 +257,7 @@
           <!-- /.article -->
 
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -220,14 +267,15 @@
                     src="images/products/product03.png"
                     alt="product 03"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -239,7 +287,7 @@
           <!-- /.article -->
 
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -249,15 +297,11 @@
                     src="images/products/product04.png"
                     alt="product 04"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
-            <!-- product-tile-title -->
+            </header>
 
             <section class="prduct-tile-pricing">
               $<span class="product-price">425</span>
@@ -269,15 +313,15 @@
         </section>
         <!-- /.product-tiles -->
       </section>
-      <!-- home-catalog-preview -->
+      <!-- catalog-preview-ctas -->
 
-      <section class="home-catalog-preview">
+      <section class="catalog-preview-ctas">
 
         <h1>Most loved</h1>
 
         <section class="product-tiles">
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -287,14 +331,15 @@
                     src="images/products/product01.png"
                     alt="product 01"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -306,7 +351,7 @@
           <!-- /.article -->
 
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -316,14 +361,15 @@
                     src="images/products/product02.png"
                     alt="product 02"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -335,7 +381,7 @@
           <!-- /.article -->
 
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -345,14 +391,15 @@
                     src="images/products/product03.png"
                     alt="product 03"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -364,7 +411,7 @@
           <!-- /.article -->
 
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -374,14 +421,15 @@
                     src="images/products/product04.png"
                     alt="product 04"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -394,14 +442,25 @@
         </section>
         <!-- /.product-tiles -->
       </section>
-      <!-- home-catalog-preview -->
+      <!-- catalog-preview-ctas -->
 
-      <div class="banner-main">
-        <div class="banner-content">
-          <img
-            src="./images/products/oliver-pecker-HONJP8DyiSM-unsplash.png"
-            alt="banner main"
-          >
+
+      <section class="section-content">
+
+        <div class="home-mid-banner">
+
+          <aside>
+            <img
+              src="./images/products/oliver-pecker-HONJP8DyiSM-unsplash.png"
+              alt="home-mid-banner"
+            >
+          </aside>
+
+        </div>
+        <!-- /.home-mid-banner -->
+
+        <section class="section-text-content">
+
           <h1>
             Watches for entrepreneurs
           </h1>
@@ -411,10 +470,8 @@
             denouncing pleasure and praising pain was born and I will
             give you a complete account of the system, and expound the
             actual teachings of the great explorer of the truth, the master-builder
-            of human happiness. No one rejects, dislikes, or avoids pleasure itself, because.
-          </p>
+            of human happiness. No one rejects, dislikes, or avoids pleasure itself, because.<br><br>
 
-          <p>
             But I must explain to you how all this mistaken idea of
             denouncing pleasure and praising pain was born and I will
             give you a complete account of the system, and expound the
@@ -422,13 +479,13 @@
             of human happiness. No one rejects, dislikes, or avoids pleasure itself, because.
           </p>
 
-        </div>
-        <!-- /.banner-content -->
+        </section>
+        <!-- section-text-container -->
 
-      </div>
-      <!-- /.banner-main -->
+      </section>
+      <!-- /.section-content -->
 
-      <section class="home-catalog-preview">
+      <section class="catalog-preview-ctas">
         <header>
           <h1>
             MEN'S
@@ -436,8 +493,11 @@
         </header>
 
         <section class="product-tiles">
+
           <article class="product-tile">
-            <div class="product-tile-image">
+
+            <header>
+
               <picture>
                 <a
                   href=""
@@ -447,14 +507,17 @@
                     src="images/products/product01.png"
                     alt="product 01"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+
+
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -465,7 +528,7 @@
           <!-- /.article -->
 
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -475,14 +538,15 @@
                     src="images/products/product02.png"
                     alt="product 02"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -494,7 +558,7 @@
           <!-- /.article -->
 
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -504,14 +568,15 @@
                     src="images/products/product03.png"
                     alt="product 03"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -525,7 +590,7 @@
 
           <article class="product-tile">
             </header>
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -535,14 +600,15 @@
                     src="images/products/product04.png"
                     alt="product 04"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -562,9 +628,9 @@
           >view all</a></footer>
 
       </section>
-      <!-- home-catalog-preview -->
+      <!-- catalog-preview-ctas -->
 
-      <section class="home-catalog-preview">
+      <section class="catalog-preview-ctas">
         <header>
           <h1>
             WOMEN'S
@@ -573,7 +639,7 @@
 
         <section class="product-tiles">
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -583,14 +649,15 @@
                     src="images/products/product05.png"
                     alt="product 05"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -601,7 +668,7 @@
           <!-- /.article -->
 
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -611,14 +678,15 @@
                     src="images/products/product06.png"
                     alt="product 06"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -630,7 +698,7 @@
           <!-- /.article -->
 
           <article class="product-tile">
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -640,14 +708,15 @@
                     src="images/products/product07.png"
                     alt="product 07"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -660,7 +729,7 @@
 
           <article class="product-tile">
             </header>
-            <div class="product-tile-image">
+            <header>
               <picture>
                 <a
                   href=""
@@ -670,14 +739,15 @@
                     src="images/products/product08.png"
                     alt="product 08"
                   >
+                  <i class="fa-solid fa-heart"></i>
                 </a>
               </picture>
-              <i class="fa-solid fa-heart"></i>
-            </div>
 
-            <h2 class="product-tile-title">
-              <b>monochrome</b>
-            </h2>
+            </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
             <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
@@ -701,7 +771,7 @@
         </footer>
 
       </section>
-      <!-- home-catalog-preview -->
+      <!-- catalog-preview-ctas -->
 
     </section>
     <!-- /.content-main -->
@@ -713,58 +783,127 @@
   <footer class="footer">
     <section class="footer-support">
       <ul>
-
         <li>
           Call us<br>
-          <a href="tel:+44(0)1023456789">
+          <a
+            href="tel:+44(0)1023456789"
+            title="Call us"
+          >
             +44(0)1023456789
           </a>
         </li>
 
         <li>
+
           <a
-            href=""
+            href="mailto:customercare@yahoo.com"
             title="customer-care"
-          >email customer care</a>
+          >email customer care
+          </a>
+
         </li>
 
         <li>
+
           <a
             href=""
             title="mobile-version"
-          >see mobile version</a>
+          >see mobile version
+          </a>
+
         </li>
 
       </ul>
+
+      <nav class="footer-nav">
+        <ul>
+          <li>
+
+            <a
+              href=""
+              title="fit-advice"
+            >style & fit advice
+            </a>
+
+          </li>
+
+          <li>
+
+            <a
+              href=""
+              title="faqs"
+            >faqs
+            </a>
+
+          </li>
+
+          <li>
+
+            <a
+              href=""
+              title="delivery"
+            >delivery
+            </a>
+
+          </li>
+
+          <li>
+
+            <a
+              href=""
+              title="exchanges-return"
+            >exchanges & return
+            </a>
+
+          </li>
+
+        </ul>
+
+      </nav>
+      <!-- /.footer-nav -->
+
+      <nav class="footer-nav">
+        <ul>
+          <li>
+            <a
+              href=""
+              title="about-us"
+            >about us
+            </a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="career"
+            >career
+            </a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="affiliates"
+            >affiliates
+            </a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="advertising"
+            >advertising
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.footer-nav -->
+
     </section>
     <!-- footer-support -->
 
-    <section class="footer-help">
-      <nav class="nav-footer1">
-        <ul>
-          <li><a href="">style & fit advice</a></li>
-          <li><a href="">faqs</a></li>
-          <li><a href="">delivery</a></li>
-          <li><a href="">exchanges & return</a></li>
-        </ul>
-      </nav>
-    </section>
-    <!--footer-help -->
-
-    <section class="footer-info">
-      <nav class="nav-footer2">
-        <ul>
-          <li><a href="">about us</a></li>
-          <li><a href="">career</a></li>
-          <li><a href="">affiliates</a></li>
-          <li><a href="">advertising</a></li>
-        </ul>
-      </nav>
-    </section>
-    <!-- footer-info -->
-
-    <section class="footer-signin">
-      <form>
+    <section class="footer-connect">
+      <form class="footer-newsletter">
         <label for="sign-in">sign up for our newsletter</label><br>
         <input
           type="text"
@@ -780,34 +919,48 @@
 
       </form>
 
-      <p class="social-media-footer">
-        <a
-          href="https://www.youtube.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Youtube</a>
+      <ul class="footer-social-media">
+        <li>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="youtube"
+          >Youtube</a>
+        </li>
 
-        <a
-          href="https://twitter.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Twitter</a>
+        <li>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="twitter"
+          >Twitter</a>
+        </li>
 
-        <a
-          href="https://www.facebook.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Facebook</a>
+        <li>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="facebook"
+          >Facebook</a>
+        </li>
 
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Instagram</a>
+        <li>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="instagram"
+          >Instagram</a>
+        </li>
 
-      </p>
+      </ul>
+      <!-- /.footer-social-media -->
+
     </section>
-    <!-- footer-signin -->
+    <!-- footer-connect -->
 
   </footer>
   <!-- /.footer -->
