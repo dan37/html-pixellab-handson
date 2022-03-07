@@ -11,7 +11,7 @@
 .stage .title {
   position: absolute;
   top: 5px;
-  right: 5px
+  right: 5px;
 }
 
 .item {
@@ -21,18 +21,22 @@
   border: 1px solid red;
 }
 
-.stage-01{
+.stage-01 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-
 /* add code here */
 
-.stage-06{
+.stage-06 {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+}
+
+.stage-02{
+  display: flex;
+  justify-content: center;
   align-items: flex-end;
 }
