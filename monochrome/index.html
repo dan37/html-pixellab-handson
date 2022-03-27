@@ -23,7 +23,7 @@
 
   <link
     rel="stylesheet"
-    href="css/styles.css"
+    href="css/style.css"
   >
 </head>
 
@@ -112,7 +112,7 @@
                     title="whish list"
                     href=""
                   >
-                    <i class="fa-solid fa-heart"></i>
+                    <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
                   </a>
                 </li>
 
@@ -206,7 +206,7 @@
         <section class="product-tiles">
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch01"
@@ -216,9 +216,8 @@
                     alt="product 01"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
-
             </header>
             <!--/.header  -->
 
@@ -237,7 +236,7 @@
 
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch01"
@@ -247,7 +246,7 @@
                     alt="product 02"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
 
               </picture>
 
@@ -269,7 +268,7 @@
 
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch03"
@@ -279,7 +278,7 @@
                     alt="product 03"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
@@ -299,7 +298,7 @@
 
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch04"
@@ -309,10 +308,15 @@
                     alt="product 04"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
+
+            <h1 class="product-tile-title">
+              monochrome
+            </h1>
+            <!-- product-tile-title -->
 
             <section class="prduct-tile-pricing">
               $<span class="product-price">425</span>
@@ -332,12 +336,12 @@
 
         <header class="header-catalog">
           <h1>Most loved</h1>
-        </header>
 
+        </header>
         <section class="product-tiles">
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch01"
@@ -347,7 +351,7 @@
                     alt="product 01"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
@@ -367,7 +371,7 @@
 
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch01"
@@ -377,7 +381,7 @@
                     alt="product 02"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
@@ -397,7 +401,7 @@
 
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch03"
@@ -407,7 +411,7 @@
                     alt="product 03"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
@@ -427,7 +431,7 @@
 
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch04"
@@ -437,7 +441,7 @@
                     alt="product 04"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
@@ -460,28 +464,33 @@
       <!-- home-catalog-preview -->
 
 
-      <section class="section-content">
+      <section class="home-aside-content">
 
-        <aside>
+        <aside class="aside-picture">
           <img
+            class="aside-img"
             src="./images/products/oliver-pecker-HONJP8DyiSM-unsplash.png"
-            alt="home-mid-banner"
+            alt="ho
+            me-mid-banner"
           >
+
         </aside>
 
-        <section class="section-text-content">
+        <section class="aside-content">
 
           <h1>
             Watches for entrepreneurs
           </h1>
 
-          <p>
+          <p class="paragraf-content">
             But I must explain to you how all this mistaken idea of
             denouncing pleasure and praising pain was born and I will
             give you a complete account of the system, and expound the
             actual teachings of the great explorer of the truth, the master-builder
-            of human happiness. No one rejects, dislikes, or avoids pleasure itself, because.<br><br>
+            of human happiness. No one rejects, dislikes, or avoids pleasure itself, because.
+          </p>
 
+          <p class="paragraf-content">
             But I must explain to you how all this mistaken idea of
             denouncing pleasure and praising pain was born and I will
             give you a complete account of the system, and expound the
@@ -490,15 +499,16 @@
           </p>
 
         </section>
-        <!-- section-text-container -->
+        <!-- home-aside-content -->
 
       </section>
       <!-- /.section-content -->
+
       <div class="line"></div>
 
       <section class="home-catalog-preview">
-        <header class="header-catalog">
-          <h1>
+        <header>
+          <h1 class="header-catalog">
             MEN'S
           </h1>
         </header>
@@ -509,7 +519,7 @@
 
             <header>
 
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch01"
@@ -519,7 +529,7 @@
                     alt="product 01"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
 
@@ -540,7 +550,7 @@
 
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch01"
@@ -550,7 +560,7 @@
                     alt="product 02"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
@@ -570,7 +580,7 @@
 
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch03"
@@ -580,7 +590,7 @@
                     alt="product 03"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
@@ -602,7 +612,7 @@
           <article class="product-tile">
             </header>
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch01"
@@ -612,7 +622,7 @@
                     alt="product 04"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
@@ -640,6 +650,7 @@
 
       </section>
       <!-- home-catalog-preview -->
+
       <div class="line"></div>
 
       <section class="home-catalog-preview">
@@ -652,7 +663,7 @@
         <section class="product-tiles">
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch01"
@@ -662,7 +673,7 @@
                     alt="product 05"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
@@ -681,7 +692,7 @@
 
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch01"
@@ -691,7 +702,7 @@
                     alt="product 06"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
@@ -711,7 +722,7 @@
 
           <article class="product-tile">
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch01"
@@ -721,7 +732,7 @@
                     alt="product 07"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
@@ -742,7 +753,7 @@
           <article class="product-tile">
             </header>
             <header>
-              <picture>
+              <picture class="product-tile-image">
                 <a
                   href=""
                   title="watch01"
@@ -752,7 +763,7 @@
                     alt="product 08"
                   >
                 </a>
-                <i class="fa-solid fa-heart"></i>
+                <span class="product-tile-badge"><i class="fa-solid fa-heart"></i></span>
               </picture>
 
             </header>
